@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class catclick : MonoBehaviour
 {
-    public moveActiveCardTo control; 
+    public moveActiveCardTo moveScript; 
+		
+		
     void Start()
     {
-        control = GameObject.Find("stayOutCard").GetComponent<moveActiveCardTo>();   
+        moveScript = GameObject.Find("sort").GetComponent<moveActiveCardTo>();   
     }
     void OnMouseDown()
     {
-        control.setAsDest(gameObject);
+        moveScript.setAsDest(gameObject);
     }
 
 }

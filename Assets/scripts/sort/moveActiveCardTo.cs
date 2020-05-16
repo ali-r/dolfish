@@ -6,15 +6,30 @@ using UnityEngine;
 public class moveActiveCardTo : MonoBehaviour
 {
     [SerializeField] float speed = 20f;
+	
+	
+	
     GameObject DestObj;
-    //GameObject ActiveCard;
+	public AudioSource wrongAudio;
+
+	persist_state state;
+	CardMaker cardMaker;
+
     public void setAsDest(GameObject Obj) {
+		if (state.activeCard.GetComponent<category>().cat == Obj)
+		{
         DestObj = Obj;
         Debug.Log("start moving");
-    }
+		}else{
+			wrongAudio.Play();
+		}
+	}
 
     void Start()
     {
+		state = GameObject.Find("persist_State").GetComponent<persist_state>();
+		cardMaker = GameObject.Find("sort").GetComponent<CardMaker>();
+
 
     }
 
@@ -22,14 +37,20 @@ public class moveActiveCardTo : MonoBehaviour
     void Update () {
         if (DestObj){
             float step = speed * Time.deltaTime;
-            gameObject.transform.position = Vector2.MoveTowards(gameObject.transform.position, DestObj.transform.position, step);  
-            gameObject.transform.localScale = Vector2.MoveTowards(gameObject.transform.localScale,new Vector2(0.13f,0.13f),step/5);  
-            if(Vector2.Distance( gameObject.transform.position,DestObj.transform.position) <= 0 ){
+			Transform source = state.activeCard.transform;
+            source.position = Vector2.MoveTowards(source.position, DestObj.transform.position, step);  
+            source.localScale = Vector2.MoveTowards(source.localScale,new Vector2(0.13f,0.13f),step/5);  
+            if(Vector2.Distance( source.position,DestObj.transform.position) <= 0 ){
                 DestObj = null;
                 Debug.Log("stop moving");
+				cardMaker.nextActiveCard();
+				
                 //gameObject.transform.position = new  Vector2(0,0);
                 //gameObject.transform.localScale = new  Vector2(0.32f,0.32f);
             }
         }
     }
+	
+
+	
 }

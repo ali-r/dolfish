@@ -7,10 +7,7 @@ public class GameSession : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (Input.GetButtonDown()
-        {
 
-        }
     }
 
     // Update is called once per frame

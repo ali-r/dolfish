@@ -5,7 +5,7 @@ using UnityEngine;
 using System;
 
 
-public class cats : MonoBehaviour
+public class ArrengeCats : MonoBehaviour
 {
     // Start is called before the first frame update
 

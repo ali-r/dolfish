@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class catclick : MonoBehaviour
 {
-    public moveActiveCardTo moveScript; 
+     moveActiveCardTo moveScript; 
 		
 		
     void Start()

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class timer : MonoBehaviour
 {
+    public float time = 25f;
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,8 +16,7 @@ public class timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		Vector2 scale = this.transform.localScale ;
-		scale.x += 4f*Time.deltaTime;
-        this.transform.localScale = scale;
+        this.transform.position = Vector2.MoveTowards(this.transform.position,new Vector2(0,0), 3.5f * Time.deltaTime / time) ;
     }
+    
 }

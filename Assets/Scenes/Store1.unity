@@ -1178,6 +1178,7 @@ MonoBehaviour:
   Settingmeneu: {fileID: 970813998}
   Bubble: {fileID: 8300000, guid: c530c4a5e314c2442860f446d3d9ec49, type: 3}
   Volume: 0.314
+  music: {fileID: 0}
 --- !u!222 &7385606771934032600
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1480,6 +1481,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SettingMeneu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8614394788371876895, guid: decfde8442f98234cb95f3ac9f033b09,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: decfde8442f98234cb95f3ac9f033b09, type: 3}

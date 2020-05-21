@@ -1531,6 +1531,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SettingMeneu
       objectReference: {fileID: 0}
+    - target: {fileID: 8614394788371876895, guid: decfde8442f98234cb95f3ac9f033b09,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8614394788915952683, guid: decfde8442f98234cb95f3ac9f033b09,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

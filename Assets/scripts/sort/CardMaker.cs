@@ -26,7 +26,7 @@ public class CardMaker : MonoBehaviour
 	
 	void make(int n)
 	{
-		cardPrefab.GetComponent<category>().cat = GameObject.Find("cats").transform.GetChild(0).gameObject;
+		cardPrefab.GetComponent<category>().cat = GameObject.Find("cats").transform.GetChild(7).gameObject;
 		
 		SpriteRenderer sr = cardPrefab.GetComponent<SpriteRenderer>();
 		sr.sprite = cardImgs[n] ;

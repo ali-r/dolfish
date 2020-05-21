@@ -43,3 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d5b8ae3ea92c9a448d842950b98fe2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneDelay: 5
+  Settingmeneu: {fileID: 8614394788371876895, guid: decfde8442f98234cb95f3ac9f033b09,
+    type: 3}
+  Bubble: {fileID: 8300000, guid: b3d0d6ed73480a348b9e3f90bfe18c0c, type: 3}
+  Volume: 0.1

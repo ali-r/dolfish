@@ -127,7 +127,19 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 4441621443578610575}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &655546841
+--- !u!1 &970813998 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8614394788371876895, guid: decfde8442f98234cb95f3ac9f033b09,
+    type: 3}
+  m_PrefabInstance: {fileID: 8614394789283806769}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &970814001 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8614394788371876864, guid: decfde8442f98234cb95f3ac9f033b09,
+    type: 3}
+  m_PrefabInstance: {fileID: 8614394789283806769}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &975207082
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,9 +147,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 655546844}
-  - component: {fileID: 655546843}
-  - component: {fileID: 655546842}
+  - component: {fileID: 975207083}
+  - component: {fileID: 975207085}
+  - component: {fileID: 975207084}
   m_Layer: 0
   m_Name: music
   m_TagString: Untagged
@@ -145,31 +157,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &655546842
-MonoBehaviour:
+--- !u!4 &975207083
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 655546841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bf368fd0b9ffcd4b92f963ef62b82a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!82 &655546843
+  m_GameObject: {fileID: 975207082}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1262332643}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &975207084
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 655546841}
+  m_GameObject: {fileID: 975207082}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b80a3342b7d685d4a9f6ac02a5c47c2b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.306
+  m_Volume: 0.319
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -213,7 +227,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.423
+      value: 0.297
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -253,32 +267,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!4 &655546844
-Transform:
+--- !u!114 &975207085
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 655546841}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 99.08864, y: -18.154144, z: 926.7314}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1262332643}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &970813998 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8614394788371876895, guid: decfde8442f98234cb95f3ac9f033b09,
-    type: 3}
-  m_PrefabInstance: {fileID: 8614394789283806769}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &970814001 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 8614394788371876864, guid: decfde8442f98234cb95f3ac9f033b09,
-    type: 3}
-  m_PrefabInstance: {fileID: 8614394789283806769}
-  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975207082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bf368fd0b9ffcd4b92f963ef62b82a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1041068694
 GameObject:
   m_ObjectHideFlags: 0
@@ -589,7 +589,7 @@ Transform:
   m_Children:
   - {fileID: 4032206801134688640}
   - {fileID: 1041068696}
-  - {fileID: 655546844}
+  - {fileID: 975207083}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -870,7 +870,7 @@ MonoBehaviour:
   Settingmeneu: {fileID: 970813998}
   Bubble: {fileID: 8300000, guid: c530c4a5e314c2442860f446d3d9ec49, type: 3}
   Volume: 0.314
-  music: {fileID: 655546841}
+  music: {fileID: 0}
 --- !u!1 &7385606770800285618
 GameObject:
   m_ObjectHideFlags: 0

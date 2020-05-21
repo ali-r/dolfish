@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b884e42f13a313f40850e28d678369fb, type: 3}
-  m_Name: ActionCards
+  m_Name: Jobs
   m_EditorClassIdentifier: 
-  Name: ActionCards
-  Logo: {fileID: 21300000, guid: c51a968339d758c4da90927c24ceb66d, type: 3}
+  Name: Jobs
+  Logo: {fileID: 0}
   Logotext: {fileID: 0}

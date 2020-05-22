@@ -28,7 +28,7 @@ public class CardMaker : MonoBehaviour
 		var sr = cardPrefab.GetComponent<SpriteRenderer>();
 		sr.sortingOrder = 10;
 			
-		System.Random r = new System.Random();
+		var r = new System.Random();
 		all_cards_shuffled = cards().ToArray().OrderBy(x => r.Next()).ToArray();
 		make(0);
 		make(1);
@@ -38,7 +38,7 @@ public class CardMaker : MonoBehaviour
 	
 	void make(int n)
 	{
-		
+		Debug.Log("oof");
 		var (cat, img) = all_cards_shuffled[n];
 		cardPrefab.GetComponent<category>().cat = cat;
 		

@@ -15,3 +15,8 @@ MonoBehaviour:
   Name: ActionCards
   Logo: {fileID: 21300000, guid: c51a968339d758c4da90927c24ceb66d, type: 3}
   Logotext: {fileID: 0}
+  cardImgs:
+  - {fileID: 21300000, guid: a6b7258e46a38854ca089015d8c2df0d, type: 3}
+  - {fileID: 21300000, guid: 48da0a525c763644ca4d9e06dce8aac3, type: 3}
+  - {fileID: 21300000, guid: 24162ccce6bbb7c48b5b2d6daa3aaf65, type: 3}
+  - {fileID: 21300000, guid: 70df19b3d31c73d4e8900e70bc8367d9, type: 3}

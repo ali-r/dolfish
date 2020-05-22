@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b884e42f13a313f40850e28d678369fb, type: 3}
-  m_Name: Clothe
+  m_Name: Jobs
   m_EditorClassIdentifier: 
-  Name: Clothe
+  Name: Jobs
   Logo: {fileID: 0}
   Logotext: {fileID: 0}
   cardImgs:
-  - {fileID: 21300000, guid: 8079ede90e741b44f810101faee03ab1, type: 3}
-  - {fileID: 21300000, guid: dfbeb59c778cd2e4ca4c869fdaca5bb3, type: 3}
-  - {fileID: 21300000, guid: f54ac940ffb2ee841989f7800f13f4df, type: 3}
-  - {fileID: 21300000, guid: e152ae09b36a3b644b40955dce40c407, type: 3}
-  - {fileID: 21300000, guid: c6092fe180980fb499f698bd5187239a, type: 3}
+  - {fileID: 21300000, guid: e01cb9cfbf4c47743b165943763d6fe5, type: 3}
+  - {fileID: 21300000, guid: f197702471261354b93bb8fac6f97b9e, type: 3}
+  - {fileID: 21300000, guid: b7dad7cf76edc034eae38c139d78feab, type: 3}
+  - {fileID: 21300000, guid: dd1f76cae443ce047a67d15f29808586, type: 3}
+  - {fileID: 21300000, guid: d2983b0bac4deec49878e2f9cea6acc1, type: 3}

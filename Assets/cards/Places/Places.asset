@@ -15,3 +15,9 @@ MonoBehaviour:
   Name: Places
   Logo: {fileID: 0}
   Logotext: {fileID: 0}
+  cardImgs:
+  - {fileID: 21300000, guid: 5a552e9b48775784b9216ce06a100834, type: 3}
+  - {fileID: 21300000, guid: 21ec03d7fb13f6a4b8ec3d76e5d4e567, type: 3}
+  - {fileID: 21300000, guid: 07aed7b901ad6e84ba1708afbb5a859d, type: 3}
+  - {fileID: 21300000, guid: a37b469c5cc41bc46a5f474e211e2c05, type: 3}
+  - {fileID: 21300000, guid: 02b2e49285d45c846a0f1342351de70e, type: 3}

@@ -16,7 +16,7 @@ public class timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.position = Vector2.MoveTowards(this.transform.position,new Vector2(0,0), 3.5f * Time.deltaTime / time) ;
+        this.transform.position = Vector2.MoveTowards(this.transform.position,new Vector2(0,4.55f), 3.5f * Time.deltaTime / time) ;
     }
     
 }

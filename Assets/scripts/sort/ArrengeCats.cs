@@ -21,13 +21,9 @@ public class ArrengeCats : MonoBehaviour
             cat.transform.position = pos;
            //Debug.Log(pos);
         }
-        Debug.Log("hello");
+        //Debug.Log("hello");
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

@@ -26,7 +26,7 @@ public class CardMaker : MonoBehaviour
 		
         cardPrefab = Resources.Load("card_prefab", typeof(GameObject)) as GameObject;
 		var sr = cardPrefab.GetComponent<SpriteRenderer>();
-		sr.sortingOrder = 10;
+		sr.sortingOrder = 25;
 			
 		var r = new System.Random();
 		all_cards_shuffled = cards().ToArray().OrderBy(x => r.Next()).ToArray();
@@ -45,7 +45,9 @@ public class CardMaker : MonoBehaviour
 		SpriteRenderer sr = cardPrefab.GetComponent<SpriteRenderer>();
 		sr.sprite = img ;
 		sr.sortingOrder -= 1;
-		state.cards.Add(Instantiate(cardPrefab, new Vector3(0, 0, 0), Quaternion.identity));
+		var card = Instantiate(cardPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+		card.name = "card"+n;
+		state.cards.Add(card);
 	}
 	
 	public void nextActiveCard(){

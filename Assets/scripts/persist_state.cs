@@ -5,9 +5,9 @@ using UnityEngine;
 public class persist_state : MonoBehaviour
 {
 	
-	public List<GameObject> cards = new List<GameObject>();
+	[SerializeField] public List<GameObject> cards = new List<GameObject>();
 	
-	public GameObject activeCard=null;
+	public GameObject activeCard = null;
 	
     // Start is called before the first frame update
     void Start()

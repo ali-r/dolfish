@@ -7,5 +7,7 @@ public class category : MonoBehaviour
 
 	public string name = "food";
 	public GameObject cat ;
+	
+	public ScriptableObject cat2;
 
 }

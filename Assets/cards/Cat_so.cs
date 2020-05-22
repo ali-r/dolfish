@@ -5,11 +5,14 @@ using UnityEngine;
 
 
 [CreateAssetMenu(fileName = "cat", menuName = "creat new cat")]
-public class Category : ScriptableObject
+public class Cat_so : ScriptableObject
 {
     public new string  Name;
     [SerializeField] Sprite Logo;
     public Sprite Logotext;
+	
+	public Sprite[] cardImgs ; 
+
 
 
 }

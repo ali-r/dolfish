@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using System.IO;
+
 public class CardMaker : MonoBehaviour
 {
 	
 	public Sprite[] cardImgs ; 
+	public ScriptableObject[] cats ; 
+
 	
 	GameObject cardPrefab;
 	
@@ -21,6 +25,17 @@ public class CardMaker : MonoBehaviour
 		make(0);
 		make(1);
 		state.activeCard = state.cards[0];
+		
+		
+		
+		//DirectoryInfo dir = new DirectoryInfo(Application.dataPath+"/cards/");
+		string[] info = Directory.GetFiles(Application.dataPath+"/cards/");
+		foreach (string dir in Directory.GetDirectories(Application.dataPath+"/cards/"))
+		{
+			//Debug.Log(dir);
+
+		}
+		Debug.Log(Application.persistentDataPath );
 		
     }
 	

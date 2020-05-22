@@ -2,59 +2,69 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-using System.IO;
+//using System.IO;
+using System.Linq; //OrderBy 
+
+
 
 public class CardMaker : MonoBehaviour
 {
 	
-	public Sprite[] cardImgs ; 
+	//public Sprite[] cardImgs ; 
 	public ScriptableObject[] cats ; 
 
 	
 	GameObject cardPrefab;
 	
 	persist_state state;
+	
+	(Cat_so,Sprite)[] all_cards_shuffled;// 
 
     void Start()
     {
 		state = GameObject.Find("persist_State").GetComponent<persist_state>();
 		
         cardPrefab = Resources.Load("card_prefab", typeof(GameObject)) as GameObject;
-		SpriteRenderer sr = cardPrefab.GetComponent<SpriteRenderer>();
+		var sr = cardPrefab.GetComponent<SpriteRenderer>();
 		sr.sortingOrder = 10;
+			
+		System.Random r = new System.Random();
+		all_cards_shuffled = cards().ToArray().OrderBy(x => r.Next()).ToArray();
 		make(0);
 		make(1);
 		state.activeCard = state.cards[0];
-		
-		
-		
-		//DirectoryInfo dir = new DirectoryInfo(Application.dataPath+"/cards/");
-		string[] info = Directory.GetFiles(Application.dataPath+"/cards/");
-		foreach (string dir in Directory.GetDirectories(Application.dataPath+"/cards/"))
-		{
-			//Debug.Log(dir);
 
-		}
-		Debug.Log(Application.persistentDataPath );
-		
     }
 	
 	void make(int n)
 	{
-		cardPrefab.GetComponent<category>().cat = GameObject.Find("cats").transform.GetChild(0).gameObject;
+		
+		var (cat, img) = all_cards_shuffled[n];
+		cardPrefab.GetComponent<category>().cat = cat;
 		
 		SpriteRenderer sr = cardPrefab.GetComponent<SpriteRenderer>();
-		sr.sprite = cardImgs[n] ;
+		sr.sprite = img ;
 		sr.sortingOrder -= 1;
 		state.cards.Add(Instantiate(cardPrefab, new Vector3(0, 0, 0), Quaternion.identity));
 	}
 	
 	public void nextActiveCard(){
-		if (state.cards.Count < cardImgs.Length){
+		if (state.cards.Count < all_cards_shuffled.Length){
 			make(state.cards.Count);
 			state.activeCard = state.cards[state.cards.Count-2];
 		}else{
 			state.activeCard = state.cards[state.cards.Count-1];
+		}
+	}
+	
+	
+	IEnumerable<(Cat_so,Sprite)> cards(){
+		foreach(Cat_so cat in cats)
+		{
+			foreach(Sprite cardImg in cat.cardImgs){
+				Debug.Log("ooz");
+				yield return(cat,cardImg);
+			}
 		}
 	}
 	

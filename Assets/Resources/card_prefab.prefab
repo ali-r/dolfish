@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6
-  m_Sprite: {fileID: 21300000, guid: db20a5917cfdeff488fa2d047dbcce2e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fb276b0d13d014c418b7f0b1cf73e4e0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_Size: {x: 4.61, y: 6.62}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &5483943334675424596
@@ -95,5 +95,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: food
-  cat: {fileID: 0}
-  cat2: {fileID: 11400000, guid: 8366549475d96a94ca913fc1261bbd4d, type: 2}
+  cat: {fileID: 11400000, guid: 8366549475d96a94ca913fc1261bbd4d, type: 2}

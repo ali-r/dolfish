@@ -16,7 +16,7 @@ public class moveActiveCardTo : MonoBehaviour
 	CardMaker cardMaker;
 
     public void setAsDest(GameObject Obj) {
-		if (state.activeCard.GetComponent<category>().cat == Obj)
+		if (state.activeCard.GetComponent<category>().cat == Obj.GetComponent<category>().cat)
 		{
         DestObj = Obj;
         Debug.Log("start moving");
@@ -53,9 +53,6 @@ public class moveActiveCardTo : MonoBehaviour
 	
 	
 	
-	public void testt(Button button){
-	     print(button.name);
-	}
 	
 
 	

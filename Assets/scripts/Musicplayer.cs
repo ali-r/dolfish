@@ -14,10 +14,12 @@ public class Musicplayer : MonoBehaviour
     {
         if (FindObjectsOfType(GetType()).Length > 1)
         {
+            //DontDestroyOnLoad(gameObject);
             Destroy(gameObject);
         }
         else
         {
+            //Destroy(gameObject);
             DontDestroyOnLoad(gameObject);
         }
     }

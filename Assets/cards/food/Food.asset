@@ -15,3 +15,9 @@ MonoBehaviour:
   Name: Food
   Logo: {fileID: 0}
   Logotext: {fileID: 0}
+  cardImgs:
+  - {fileID: 21300000, guid: 30053583befe6fd45abe89d3c4cad004, type: 3}
+  - {fileID: 21300000, guid: fb276b0d13d014c418b7f0b1cf73e4e0, type: 3}
+  - {fileID: 21300000, guid: 8e4f97a5b1e34124eaa75ec427b3804c, type: 3}
+  - {fileID: 21300000, guid: 86aa1a2a6c2a32449847a2cf04e557e5, type: 3}
+  - {fileID: 21300000, guid: 8c42e4a66e660c84f9ca5d72d7b98f90, type: 3}

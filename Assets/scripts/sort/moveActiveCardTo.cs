@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+ using UnityEngine.UI;
 
 public class moveActiveCardTo : MonoBehaviour
 {
@@ -50,6 +50,12 @@ public class moveActiveCardTo : MonoBehaviour
             }
         }
     }
+	
+	
+	
+	public void testt(Button button){
+	     print(button.name);
+	}
 	
 
 	

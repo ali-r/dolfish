@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Jobs
   m_EditorClassIdentifier: 
   Name: Jobs
-  Logo: {fileID: 0}
+  Logo: {fileID: 21300000, guid: e0ecf84a8b0be2a4cbe3d76ddf7d55f6, type: 3}
   Logotext: {fileID: 0}
   cardImgs:
   - {fileID: 21300000, guid: e01cb9cfbf4c47743b165943763d6fe5, type: 3}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Clothe
   m_EditorClassIdentifier: 
   Name: Clothe
-  Logo: {fileID: 0}
+  Logo: {fileID: 21300000, guid: 9a9496398a70da04c92d462b3cb1fa16, type: 3}
   Logotext: {fileID: 0}
   cardImgs:
   - {fileID: 21300000, guid: 8079ede90e741b44f810101faee03ab1, type: 3}

@@ -5,6 +5,6 @@ using UnityEngine;
 public class category : MonoBehaviour
 {
 	
-	public ScriptableObject cat;
+	public Cat_so cat;
 
 }

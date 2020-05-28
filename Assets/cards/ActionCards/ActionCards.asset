@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: ActionCards
   Logo: {fileID: 21300000, guid: 7941831305b081042969ad5dfa833d89, type: 3}
+<<<<<<< HEAD
   Logotext: {fileID: 21300000, guid: 7941831305b081042969ad5dfa833d89, type: 3}
+=======
+  Logotext: {fileID: 0}
+>>>>>>> 153c0d8e4d243b4d79ebdb6d190bfdf92a734682
   cardImgs:
   - {fileID: 21300000, guid: a6b7258e46a38854ca089015d8c2df0d, type: 3}
   - {fileID: 21300000, guid: 48da0a525c763644ca4d9e06dce8aac3, type: 3}

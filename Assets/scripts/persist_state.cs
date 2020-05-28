@@ -9,9 +9,18 @@ public class persist_state : MonoBehaviour
 	
 	public GameObject activeCard = null;
 	
+	
+	public float remainedSortTime = 25f; 
+	
+	
+	
+	public Dictionary<Cat_so, List<GameObject>> inCatCards = new Dictionary<Cat_so, List<GameObject>>()  ;
+	
     // Start is called before the first frame update
-    void Start()
+    void Update()
     {
+		remainedSortTime -= Time.deltaTime;
+
 		
     }
 	

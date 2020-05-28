@@ -1,7 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
- using UnityEngine.UI;
+using UnityEngine.UI;
+
+using System.Threading.Tasks;
+using System;
 
 public class moveActiveCardTo : MonoBehaviour
 {
@@ -11,9 +14,12 @@ public class moveActiveCardTo : MonoBehaviour
 	
     GameObject DestObj;
 	public AudioSource wrongAudio;
+	public Color wrongColor;
 
 	persist_state state;
+	
 	CardMaker cardMaker;
+	
 
     public void setAsDest(GameObject Obj) {
 		if (state.activeCard.GetComponent<category>().cat == Obj.GetComponent<category>().cat)
@@ -22,6 +28,13 @@ public class moveActiveCardTo : MonoBehaviour
         Debug.Log("start moving");
 		}else{
 			wrongAudio.Play();
+			
+			var buttonImg = Obj.GetComponent<Image>();
+			buttonImg.color = wrongColor;
+
+			((Action)(()=> {
+				buttonImg.color = new Color(255,255,255);
+			})).runAfter(200);
 		}
 	}
 
@@ -52,8 +65,16 @@ public class moveActiveCardTo : MonoBehaviour
     }
 	
 	
-	
-	
 
 	
+}
+
+
+public static class ActionExtensions
+{
+    public static async void runAfter(this Action act, double delay)
+    {
+        await Task.Delay(TimeSpan.FromMilliseconds(delay));
+        act();
+    }
 }

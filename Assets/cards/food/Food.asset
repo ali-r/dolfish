@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Food
   m_EditorClassIdentifier: 
   Name: Food
-  Logo: {fileID: 0}
+  Logo: {fileID: 21300000, guid: db1f28d107867ae45af2fce7c9ee88c8, type: 3}
   Logotext: {fileID: 0}
   cardImgs:
   - {fileID: 21300000, guid: 30053583befe6fd45abe89d3c4cad004, type: 3}

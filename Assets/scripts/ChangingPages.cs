@@ -35,7 +35,7 @@ public class ChangingPages : MonoBehaviour
     {
         StartCoroutine(Delay());
         //string X = "Play";
-        SceneManager.LoadScene("Play");
+        SceneManager.LoadScene("sort");
         //FindObjectOfType<GameSession>().Reset();
     }
     public void MainMeneu()

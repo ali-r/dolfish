@@ -22,7 +22,7 @@ public class ArrengeCats : MonoBehaviour
         for (int i = 0; i <= 5; i++) 
         {
 			GameObject cat = this.transform.GetChild(i).gameObject; 
-			state.inCatCards.Add(cat.GetComponent<category>().cat, new List<GameObject>());
+			//state.inCatCards.Add(cat.GetComponent<category>().cat, new List<GameObject>());
 			
             Vector3 pos = cat.transform.position;
             pos.x = r * (float)Math.Sin(i* 2*Math.PI / 6);

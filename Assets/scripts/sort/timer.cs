@@ -4,19 +4,23 @@ using UnityEngine;
 
 public class timer : MonoBehaviour
 {
-    public float time = 25f;
+    float totalTime =25f;
+	persist_state state;
+
     
 
     // Start is called before the first frame update
     void Start()
     {
-        
+		state = GameObject.Find("persist_State").GetComponent<persist_state>();
+
+        totalTime = state.remainedSortTime;
     }
 
     // Update is called once per frame
     void Update()
     {
-        this.transform.position = Vector2.MoveTowards(this.transform.position,new Vector2(-4f,4.55f), 3.5f * Time.deltaTime / time) ;
+        this.transform.localPosition  = new Vector2(-10f + state.remainedSortTime*10f/25f, -0.22f) ;
     }
     
 }

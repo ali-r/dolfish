@@ -21,3 +21,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e975f8faf6290d349a0fbc961a211f7a, type: 3}
   - {fileID: 21300000, guid: 631822f80dd4e3e4d8107b3df376c6ec, type: 3}
   - {fileID: 21300000, guid: ca896e963099a6044beacd33cf0c0f73, type: 3}
+  cardVoice:
+  - {fileID: 8300000, guid: f2e5f7a098f96014e868cb938c71c851, type: 3}
+  - {fileID: 8300000, guid: 887341a020ea5a84f90aa9a13273bbfc, type: 3}
+  - {fileID: 8300000, guid: 87326eccc859bb947aeeaceff3f9ca5e, type: 3}
+  - {fileID: 8300000, guid: cb2b10d65d769844c8da0deea14cddb3, type: 3}
+  - {fileID: 8300000, guid: c8bacd37a4c08d64288be2725cd5a41c, type: 3}

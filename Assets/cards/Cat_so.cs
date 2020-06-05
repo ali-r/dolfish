@@ -11,7 +11,8 @@ public class Cat_so : ScriptableObject
     [SerializeField] Sprite Logo;
     public Sprite Logotext;
 	
-	public Sprite[] cardImgs ; 
+	public Sprite[] cardImgs ;
+    public AudioClip[] cardVoice;
 
 
 

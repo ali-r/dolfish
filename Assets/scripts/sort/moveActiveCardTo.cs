@@ -31,6 +31,7 @@ public class moveActiveCardTo : MonoBehaviour
 			
 			var buttonImg = Obj.GetComponent<Image>();
 			buttonImg.color = wrongColor;
+			state.remainedSortTime -= 0.5f;
 
 			((Action)(()=> {
 				buttonImg.color = new Color(255,255,255);

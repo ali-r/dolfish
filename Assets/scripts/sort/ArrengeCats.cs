@@ -18,7 +18,7 @@ public class ArrengeCats : MonoBehaviour
 		state = GameObject.Find("persist_State").GetComponent<persist_state>();
 
 		
-        float r = 4.2f;
+        float r = 2.2f;
         for (int i = 0; i <= 5; i++) 
         {
 			GameObject cat = this.transform.GetChild(i).gameObject; 

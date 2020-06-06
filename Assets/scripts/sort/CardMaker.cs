@@ -18,7 +18,7 @@ public class CardMaker : MonoBehaviour
 	
 	persist_state state;
 	
-	(Cat_so,Sprite)[] all_cards_shuffled;// 
+	(Cat_so,Sprite, AudioClip)[] all_cards_shuffled;// 
 
     void Start()
     {
@@ -26,12 +26,14 @@ public class CardMaker : MonoBehaviour
 		
         cardPrefab = Resources.Load("card_prefab", typeof(GameObject)) as GameObject;
 		var sr = cardPrefab.GetComponent<SpriteRenderer>();
+		var vr = cardPrefab.GetComponent<AudioSource>();
 		sr.sortingOrder = 25;
 			
 		var r = new System.Random();
 		all_cards_shuffled = cards().ToArray().OrderBy(x => r.Next()).ToArray();
 		make(0);
 		make(1);
+		make(2);
 		state.activeCard = state.cards[0];
 
     }
@@ -39,11 +41,13 @@ public class CardMaker : MonoBehaviour
 	void make(int n)
 	{
 		Debug.Log("oof");
-		var (cat, img) = all_cards_shuffled[n];
+		var (cat, img, voice) = all_cards_shuffled[n];
 		cardPrefab.GetComponent<category>().cat = cat;
 		
 		SpriteRenderer sr = cardPrefab.GetComponent<SpriteRenderer>();
 		sr.sprite = img ;
+		var vr = cardPrefab.GetComponent<AudioSource>();
+		vr.AudioClip = voice;
 		sr.sortingOrder -= 1;
 		var card = Instantiate(cardPrefab, new Vector3(0, 0, 0), Quaternion.identity);
 		card.name = "card"+n;

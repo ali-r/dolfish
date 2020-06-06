@@ -63,7 +63,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Clothe
+  m_text: cloths
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a9fcaee6f04b48745b42d39ea8d317af, type: 2}
   m_sharedMaterial: {fileID: -6018564487989896790, guid: a9fcaee6f04b48745b42d39ea8d317af,
@@ -92,12 +92,12 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 10
-  m_fontSizeBase: 10
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 50
   m_fontStyle: 1
   m_textAlignment: 513
   m_characterSpacing: 0

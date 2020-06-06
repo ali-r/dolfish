@@ -33,7 +33,7 @@ public class CardMaker : MonoBehaviour
 		all_cards_shuffled = cards().ToArray().OrderBy(x => r.Next()).ToArray();
 		make(0);
 		make(1);
-		make(2);
+		//make(2);
 		state.activeCard = state.cards[0];
 
     }
@@ -47,7 +47,7 @@ public class CardMaker : MonoBehaviour
 		SpriteRenderer sr = cardPrefab.GetComponent<SpriteRenderer>();
 		sr.sprite = img ;
 		var vr = cardPrefab.GetComponent<AudioSource>();
-		vr.AudioClip = voice;
+		vr.clip = voice;
 		sr.sortingOrder -= 1;
 		var card = Instantiate(cardPrefab, new Vector3(0, 0, 0), Quaternion.identity);
 		card.name = "card"+n;
@@ -64,12 +64,15 @@ public class CardMaker : MonoBehaviour
 	}
 	
 	
-	IEnumerable<(Cat_so,Sprite)> cards(){
+	IEnumerable<(Cat_so,Sprite,AudioClip)> cards(){
 		foreach(Cat_so cat in cats)
 		{
-			foreach(Sprite cardImg in cat.cardImgs){
-				Debug.Log("ooz");
-				yield return(cat,cardImg);
+			var im_vo = cat.cardImgs.Zip(cat.cardVoice, (x, y) => (x , y));
+			
+			foreach((Sprite, AudioClip) imvo in im_vo){
+				
+				(var im, var audio)  = imvo;
+				yield return( cat,im,audio );
 			}
 		}
 	}

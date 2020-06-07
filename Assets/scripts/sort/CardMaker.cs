@@ -27,14 +27,13 @@ public class CardMaker : MonoBehaviour
         cardPrefab = Resources.Load("card_prefab", typeof(GameObject)) as GameObject;
 		var sr = cardPrefab.GetComponent<SpriteRenderer>();
 		var vr = cardPrefab.GetComponent<AudioSource>();
-		sr.sortingOrder = 25;
+		sr.sortingOrder = 30;
 			
 		var r = new System.Random();
 		all_cards_shuffled = cards().ToArray().OrderBy(x => r.Next()).ToArray();
 		make(0);
 		
 		make(1);
-		//make(2);
 		activate(0);
 
     }
@@ -51,15 +50,6 @@ public class CardMaker : MonoBehaviour
 		var vr = cardPrefab.GetComponent<AudioSource>();
 		//Delay();
 		//vr.playOnAwake = voice;
-		if (n > 0)
-		{
-			Delay();
-			vr.playOnAwake = voice;
-		}
-		else
-		{
-			vr.clip = voice;
-		}
         
 		vr.clip = voice;
 		sr.sortingOrder -= 1;

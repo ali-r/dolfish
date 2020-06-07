@@ -34,7 +34,7 @@ public class CardMaker : MonoBehaviour
 		make(0);
 		make(1);
 		//make(2);
-		state.activeCard = state.cards[0];
+		activate(0);
 
     }
 	
@@ -57,10 +57,17 @@ public class CardMaker : MonoBehaviour
 	public void nextActiveCard(){
 		if (state.cards.Count < all_cards_shuffled.Length){
 			make(state.cards.Count);
-			state.activeCard = state.cards[state.cards.Count-2];
+			activate(state.cards.Count-2);
 		}else{
-			state.activeCard = state.cards[state.cards.Count-1];
+			activate(state.cards.Count-1);
 		}
+	}
+	
+	
+	void activate (int n)
+	{
+		state.activeCard = state.cards[n];
+		state.activeCard.GetComponent<AudioSource>().Play();
 	}
 	
 	

@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c706ed4080678004c8394bee05925dfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cat: {fileID: 11400000, guid: c8abad2138a0fe24184cb9223fec83aa, type: 2}
+  cat: {fileID: 11400000, guid: bf7831a83a38efb4c93ce35f4efee8f0, type: 2}
 --- !u!1001 &1439523817283397059
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -159,12 +159,12 @@ PrefabInstance:
     - target: {fileID: 4168393076859160838, guid: 9a6fc4dcd27796149be9e0d285a29f06,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -40.4
+      value: -42
       objectReference: {fileID: 0}
     - target: {fileID: 4168393076859160838, guid: 9a6fc4dcd27796149be9e0d285a29f06,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4
+      value: 5.2
       objectReference: {fileID: 0}
     - target: {fileID: 4168393076859160838, guid: 9a6fc4dcd27796149be9e0d285a29f06,
         type: 3}
@@ -243,53 +243,28 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8588292540458165752, guid: ae15e05ece8ff9d4c8cf3c4e5664a954,
         type: 3}
-      propertyPath: m_margin.x
-      value: -9.108331
+      propertyPath: m_enableAutoSizing
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8588292540458165752, guid: ae15e05ece8ff9d4c8cf3c4e5664a954,
         type: 3}
-      propertyPath: m_margin.y
-      value: -7.1666193
-      objectReference: {fileID: 0}
-    - target: {fileID: 8588292540458165752, guid: ae15e05ece8ff9d4c8cf3c4e5664a954,
-        type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4292539793
-      objectReference: {fileID: 0}
-    - target: {fileID: 8588292540458165752, guid: ae15e05ece8ff9d4c8cf3c4e5664a954,
-        type: 3}
-      propertyPath: m_fontColor.r
-      value: 0.56737274
-      objectReference: {fileID: 0}
-    - target: {fileID: 8588292540458165752, guid: ae15e05ece8ff9d4c8cf3c4e5664a954,
-        type: 3}
-      propertyPath: m_fontColor.g
-      value: 0.9622642
-      objectReference: {fileID: 0}
-    - target: {fileID: 8588292540458165752, guid: ae15e05ece8ff9d4c8cf3c4e5664a954,
-        type: 3}
-      propertyPath: m_fontColor.b
-      value: 0.8555368
-      objectReference: {fileID: 0}
-    - target: {fileID: 8588292540458165752, guid: ae15e05ece8ff9d4c8cf3c4e5664a954,
-        type: 3}
-      propertyPath: m_fontStyle
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8588292540458165752, guid: ae15e05ece8ff9d4c8cf3c4e5664a954,
-        type: 3}
-      propertyPath: m_textAlignment
-      value: 516
-      objectReference: {fileID: 0}
-    - target: {fileID: 8588292540458165752, guid: ae15e05ece8ff9d4c8cf3c4e5664a954,
-        type: 3}
-      propertyPath: m_margin.w
-      value: -3.4071655
+      propertyPath: m_margin.z
+      value: -47.159958
       objectReference: {fileID: 0}
     - target: {fileID: 8588292540458165752, guid: ae15e05ece8ff9d4c8cf3c4e5664a954,
         type: 3}
       propertyPath: m_text
-      value: Food
+      value: food
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588292540458165752, guid: ae15e05ece8ff9d4c8cf3c4e5664a954,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588292540458165752, guid: ae15e05ece8ff9d4c8cf3c4e5664a954,
+        type: 3}
+      propertyPath: m_margin.x
+      value: 4.9658217
       objectReference: {fileID: 0}
     - target: {fileID: 8588292540458165752, guid: ae15e05ece8ff9d4c8cf3c4e5664a954,
         type: 3}
@@ -364,7 +339,7 @@ PrefabInstance:
     - target: {fileID: 8588292540458165753, guid: ae15e05ece8ff9d4c8cf3c4e5664a954,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 68.5
       objectReference: {fileID: 0}
     - target: {fileID: 8588292540458165753, guid: ae15e05ece8ff9d4c8cf3c4e5664a954,
         type: 3}

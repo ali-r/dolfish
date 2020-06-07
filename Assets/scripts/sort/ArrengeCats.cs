@@ -4,7 +4,7 @@ using UnityEngine;
 
 using System;
 
-
+[ExecuteInEditMode]
 public class ArrengeCats : MonoBehaviour
 {
     // Start is called before the first frame update

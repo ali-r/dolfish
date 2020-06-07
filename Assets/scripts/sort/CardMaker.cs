@@ -10,8 +10,11 @@ using System.Linq; //OrderBy
 public class CardMaker : MonoBehaviour
 {
 	
-	//public Sprite[] cardImgs ; 
+	//public Sprite[] cardImgs ;
+	public Material theMaterial ;
+	
 	public ScriptableObject[] cats ; 
+
 
 	
 	GameObject cardPrefab;
@@ -72,6 +75,7 @@ public class CardMaker : MonoBehaviour
 	{
 		state.activeCard = state.cards[n];
 		state.activeCard.GetComponent<AudioSource>().Play();
+		state.activeCard.GetComponent<SpriteRenderer>().material = theMaterial;
 	}
 	
 	

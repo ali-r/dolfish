@@ -2,7 +2,7 @@
 {
     Properties
     {
-		_R ("radius", Range (0.1, 10)) = 0.03
+		_R ("radius", Range (0.1, 15)) = 0.03
 
     }
     SubShader
@@ -50,8 +50,8 @@
 				float w;
 				float factor = 1;
 
-				if(inp.uv.y>0.25){
-					factor=100;
+				if(inp.uv.y<0.25){
+					factor=1000;
 				}
 				for(float offset1=-r ; offset1<=r ; offset1+=step){
 					float2 uv = inp.uv + float2( offset1 , 0);

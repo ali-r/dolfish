@@ -5,13 +5,15 @@ using UnityEngine;
 //using System.IO;
 using System.Linq; //OrderBy 
 
-
+using System;
 
 public class CardMaker : MonoBehaviour
 {
 	
 	//public Sprite[] cardImgs ;
 	public Material theMaterial ;
+
+	public float unblurSpeed;
 	
 	public ScriptableObject[] cats ; 
 
@@ -50,6 +52,7 @@ public class CardMaker : MonoBehaviour
 		
 		SpriteRenderer sr = cardPrefab.GetComponent<SpriteRenderer>();
 		sr.sprite = img ;
+
 		var vr = cardPrefab.GetComponent<AudioSource>();
 		//Delay();
 		//vr.playOnAwake = voice;
@@ -75,7 +78,14 @@ public class CardMaker : MonoBehaviour
 	{
 		state.activeCard = state.cards[n];
 		state.activeCard.GetComponent<AudioSource>().Play();
+		theMaterial.SetFloat ("_R", 15);
 		state.activeCard.GetComponent<SpriteRenderer>().material = theMaterial;
+		
+	}
+	
+	void Update () {
+		
+		theMaterial.SetFloat ("_R", Math.Max(theMaterial.GetFloat("_R")- unblurSpeed * Time.deltaTime,0.1f));
 	}
 	
 	
@@ -95,7 +105,5 @@ public class CardMaker : MonoBehaviour
 	IEnumerator Delay() 
 	{
 		yield return new WaitForSeconds(5);
-		
-
 	}
 }

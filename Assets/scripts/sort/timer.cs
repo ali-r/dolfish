@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class timer : MonoBehaviour
 {
-    float totalTime =25f;
+    float totalTime ;
 	persist_state state;
 
     
@@ -20,7 +20,7 @@ public class timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.localPosition  = new Vector2(-10f + state.remainedSortTime*10f/25f, -0.22f) ;
+        this.transform.localPosition  = new Vector2(-10f + state.remainedSortTime*10f/totalTime, -0.22f) ;
     }
     
 }
